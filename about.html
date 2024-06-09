@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta viewport="width=device-width, initial-scale=1.0" />
+    <title>Invoker Game | About</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="container-fluid d-flex">
+      <div class="mx-auto justify-items-center px-5 py-1">
+        <a href="index.html" class="btn text-white" onclick="loadContent('./components/startgame.html'); resetTimer()">Home</a>
+        <a href="about.html" class="btn text-white" >about</a>
+        <a href="ranks.html" class="btn text-white">ranks</a>
+      </div>
+    </nav>
+    <div class="container-fluid py-3 px-4">
+      <div class="row gy-4 column-gap-3">
+        <div class="col-12 col-xl bg-black controls py-4">
+          <div class="text-center text-white">Controls</div>
+          <div class="d-block-flex container mt-2">
+            <div class="d-inline-flex ctrl-text">
+              <div class="spell-bar-item" data-img="./images/spheres/quas.png"></div>
+              <div class="my-auto text-white px-5">q - quas</div>
+            </div>
+            <div class="d-inline-flex ctrl-text">
+              <div class="spell-bar-item" data-img="./images/spheres/wex.png"></div>
+              <div class="my-auto text-white px-5">w - wex</div>
+            </div>
+            <div class="d-inline-flex ctrl-text">
+              <div class="spell-bar-item" data-img="./images/spheres/exort.png"></div>
+              <div class="my-auto text-white px-5">e - exort</div>
+            </div>
+            <div class="d-inline-flex ctrl-text">
+              <div class="ctrl-bar-item" text="d"></div>
+              <div class="my-auto text-white px-5">spell 1 - d</div>
+            </div>
+            <div class="d-inline-flex ctrl-text">
+              <div class="ctrl-bar-item" text="f"></div>
+              <div class="my-auto text-white px-5">spell 2 - f</div>
+            </div>
+            <div class="d-inline-flex ctrl-text">
+              <div class="spell-bar-item" data-img="./images/spheres/invoke.png"></div>
+              <div class="my-auto text-white px-5">R - invoke</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 py-4 game">
+          <p class="header text-white text-center ">About</p>
+          <p class="text px-3"> 
+            Built using HTML, CSS, and JavaScript, the Invoker Game leverages web technologies to deliver a smooth and responsive experience. The game logic includes a carefully crafted algorithm for random spell generation, ensuring a balanced and challenging gameplay experience. Sphere scrolling and spell bar updates are implemented using efficient queue data structures for a seamless user interface.
+          </p>
+          <div class="row text-white text-center justify-items-between">
+            <div class="col-6">Before</div>
+            <div class="col-6"> After</div>
+          </div>
+          <div class="row text-white text-center justify-items-between p-2">
+            <div class="col-6">
+             <img src="./images/Invoker_fails.gif" alt="before" class="img-fluid gif" />
+            </div>
+            <div class="col-6 gif">
+              <img src="./images/123.gif" alt="after" class="img-fluid gif" />   
+            </div>
+          </div>
+          <div class="row text-white text-center justify-items-between">
+            <div class="col-6 gif">
+              <img src="./images/dislike-removebg-preview.png" alt="dislike" class="img-fluid dislike" />
+            </div>
+            <div class="col-6">
+              <img src="./images/like.png" alt="like" class="img-fluid like" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl bg-black spells py-4 ">
+          <div class="text-center text-white">Spells</div>
+          <div class="d-block-flex container mt-2">
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/cold_snap.png"></div>
+              <div class="my-auto text-white px-5 mx-5">qqq</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/emp.png"></div>
+              <div class="my-auto text-white px-5 mx-5">www</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/sun_strike.png"></div>
+              <div class="my-auto text-white px-5 mx-5">eee</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/ghost_walk.png"></div>
+              <div class="my-auto text-white px-5 mx-5">qqw</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/tornado.png"></div>
+              <div class="my-auto text-white px-5 mx-5">wwq</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/ice_wall.png"></div>
+              <div class="my-auto text-white px-5 mx-5">qqw</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/alacrity.png"></div>
+              <div class="my-auto text-white px-5 mx-5">wwe</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/chaos_meteor.png"></div>
+              <div class="my-auto text-white px-5 mx-5">eew</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/forge_spirit.png"></div>
+              <div class="my-auto text-white px-5 mx-5">qee</div>
+            </div>
+            <div class="d-inline-flex spells-text">
+              <div class="spells-item" data-img="./images/spells/deafening_blast.png"></div>
+              <div class="my-auto text-white px-5 mx-5">qwe</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="script.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>

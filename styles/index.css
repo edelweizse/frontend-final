@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Trajan Bold';
+  src: url(../Trajan\ Bold.ttf) format('truetype');
+}
+
+body {
+  font-family: 'Trajan Bold', sans-serif !important;
+  font-size: 24px !important;
+  background-image: url('../images/Mid_Lane_16x9.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+  font-size: 30px;
+}
+
+nav > div {
+  background-color: black; 
+  border-radius: 0 0 25px 25px;
+  opacity: 0.99;
+}
+
+.controls {
+  background-color: black;
+  border-radius: 50px;
+  opacity: 0.85;
+}
+
+.controls > * {
+  opacity: 100% !important;
+}
+
+.spells {
+  background-color: black;
+  border-radius: 50px;
+  opacity: 0.85;
+}
+
+.game {
+  background-color: black;
+  border-radius: 50px;
+  opacity: 0.99;
+}
+
+.img-wrap {
+  background-color: black;
+  border-radius: 50px;
+  object-fit: fill;
+  border: 1px solid white;
+}
+
+.invoker {
+  border-radius: 35px;
+  width: 217px;
+  height: 181px;
+  flex-shrink: 0;
+}
+
+.start-btn {
+  border-radius: 35px;
+  width: 217px;
+  border: 1px solid #9AB2D9;
+  background: #6A2B72;
+  font-size: 23px;
+}
+
+.sphere {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background: #6A2B72;
+}
+
+
+.spell-bar-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  background: #6A2B72;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.spell-bar-item::before {
+  content: attr(text);
+  position: absolute;
+  top: 0;
+  left: 75%;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.ctrl-text {
+  font-size: 18px !important;
+  margin-bottom: 1.6rem;
+}
+
+.ctrl-bar-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  background: #6A2B72;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.ctrl-bar-item::before {
+  content: attr(text);
+  position: absolute;
+  top: 0;
+  left: 75%;
+  right: 0;
+  bottom: 0;
+  color: white;
+  font-size: 20px;
+}
+
+
+.spells-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #6A2B72;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.spells-text {
+  font-size: 18px !important;
+  margin-bottom: 0.8rem;
+}
+
+.current-spell {
+  background-color: #6A2B72;
+  text-align: center;
+  border-radius: 10px;
+  min-width: 350px;
+}
+
+.cspell-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background: #6A2B72;
+  background-size: cover;
+  background-position: center;
+}
+
+.rank {
+  border-radius: 35px;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.timer {
+  font-size: 40px !important;
+}
